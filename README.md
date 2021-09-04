@@ -28,8 +28,7 @@ pip install -r requirements.txt
 make
 ```
 
-Then, see [`textproto.py`](textproto.py) for an example of how to load the
-data into Python.
+Then, see [`textproto.py`](textproto.py).
 
 ## Authors
 
