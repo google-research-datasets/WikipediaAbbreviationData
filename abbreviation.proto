@@ -1,0 +1,47 @@
+syntax = "proto2";
+
+package speech.tts;
+
+message AbbreviationToken {
+  // One only needs to set both of the following when the token was in fact
+  // abbreviated.
+
+  // Unabbreviated form of the word; if omitted it indicates the word's
+  // expansion is not yet known.
+  optional string expanded = 1;
+  // Abbreviated form of the word; if omitted it indicates the word was not
+  // abbreviated or the abbreviation is not yet known.
+  optional string abbreviated = 2;
+
+  // A series of truth values indicating whether a value was
+  // kept in abbreviation (True) or not (False). E.g., for the abbreviation
+  // "cncrning" of the word "concerning", the alignment skeleton:
+  //
+  // concerning
+  // | || |||||
+  // c nc rning
+  //
+  // would have the alignment:
+  //
+  // [True, False, True, True, False, True, True, True, True, True]
+  //
+  // Note that due to the constraints of the task (i.e., no insertion or
+  // substitution) a valid alignment has to
+  // have
+  repeated bool alignments = 6;
+
+  // Additional NLPish metadata.
+
+  // Universal POS tag.
+  optional string utag = 4;
+  // Language-specific POS tag.
+  optional string xtag = 5;
+}
+
+message AbbreviationSentence {
+  repeated AbbreviationToken tokens = 1;
+}
+
+message AbbreviationCorpus {
+  repeated AbbreviationSentence sentences = 1;
+}
