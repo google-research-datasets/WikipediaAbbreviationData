@@ -33,7 +33,8 @@ Then, see [`textproto.py`](textproto.py).
 ## Authors
 
 This data was collected by [Kyle Gorman](mailto:kbg@google.com) with help from
-Olivia Redfield, Catherine Golner, and Katherine Wang, among others.
+the annotators and Brian Roark, Richard Sproat, Olivia Redfield, Catherine
+Golner, and Katherine Wang.
 
 ## License
 
