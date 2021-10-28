@@ -42,7 +42,7 @@ See [`LICENSE`](LICENSE).
 
 ## Contributing
 
-See [`CONTRIBUTING`](CONTRIBUTING)
+See [`CONTRIBUTING`](CONTRIBUTING).
 
 ## Mandatory disclaimer
 
