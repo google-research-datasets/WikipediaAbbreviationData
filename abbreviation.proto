@@ -1,7 +1,5 @@
 syntax = "proto2";
 
-package speech.tts;
-
 message AbbreviationToken {
   // One only needs to set both of the following when the token was in fact
   // abbreviated.
@@ -24,10 +22,6 @@ message AbbreviationToken {
   // would have the alignment:
   //
   // [True, False, True, True, False, True, True, True, True, True]
-  //
-  // Note that due to the constraints of the task (i.e., no insertion or
-  // substitution) a valid alignment has to
-  // have
   repeated bool alignments = 6;
 
   // Additional NLPish metadata.
