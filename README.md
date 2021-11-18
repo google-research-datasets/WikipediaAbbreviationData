@@ -4,7 +4,8 @@ This repository provides labeled data for training abbreviation expansion
 models, as described in:
 
 Gorman, K., Kirov, C., Roark, B., and Sproat, R. In press. Structured
-abbreviation in context. In *Findings of EMNLP*, to appear.
+abbreviation in context. In *Findings of the Association for Computational
+Linguistics: EMNLP 2021*, pages 995-1005.
 
 If you use this data in a publication, we would appreciate it if you cite this
 paper.
