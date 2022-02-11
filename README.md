@@ -34,7 +34,7 @@ Then, see [`textproto.py`](textproto.py).
 ## Authors
 
 This data was collected by [Kyle Gorman](mailto:kbg@google.com) with help from
-the annotators and Brian Roark, Richard Sproat, Olivia Redfield, Catherine
+the annotators and Brian Roark, Richard Sproat, Olivia Redfield, Caterina
 Golner, and Katherine Wang.
 
 ## License
